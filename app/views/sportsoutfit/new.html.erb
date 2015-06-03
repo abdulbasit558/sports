@@ -1,0 +1,30 @@
+<p>
+<h1>Create a new user</h1>
+<hr/>
+</p>
+
+<div class="row">
+    <div class="well col-md-8 col-offset-2">
+        <%= form_for @user do |f| %>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+        
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+        
+        <%= f.label :phone %>
+        <%= f.text_field :phone %>
+        
+        <%= f.label :nic %>
+        <%= f.text_field :nic %>
+        
+        <%= f.label :address %>
+        <%= f.text_area :address %>
+
+        <%= f.submit 'Create User', class: "btn btn-success" %>
+        <% end %>
+
+
+    </div>
+    
+</div>
